@@ -8,7 +8,7 @@ public class WdBase {
 
     @AfterEach
     public void quit() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(20000);
         wd.close();
         wd.quit();
     }

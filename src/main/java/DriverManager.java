@@ -16,8 +16,8 @@ public class DriverManager {
         wd.manage().window().maximize();
 
          //задать разрешение
-//        Dimension dimension = new Dimension(480,700);
-//        wd.manage().window().setSize(dimension);
+       //Dimension dimension = new Dimension(480,700);
+     //  wd.manage().window().setSize(dimension);
     }
 
     public  static WebDriver getDriver(){

@@ -1,5 +1,10 @@
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 
 public class Tests extends WdBase{
@@ -13,6 +18,9 @@ public class Tests extends WdBase{
         wd.findElement(By.xpath("//input[@data-testid=\"password-input\"]")).sendKeys("qwerty@2020");
         // пример работы с button
         wd.findElement(By.xpath("//button[@data-testid=\"login-to-mail\"]")).click();
+
+        // пример работы с амазоном
+        //wd.findElement(By.id("continue")).click();
     }
 
     @Test
@@ -58,8 +66,8 @@ public class Tests extends WdBase{
         // driver.navigate().to("https://www.yandex.ru");
 
         //явное ожидание
-//        WebElement element = (new WebDriverWait(wd, Duration.ofSeconds(10))
-//                .until(ExpectedConditions.presenceOfElementLocated(By.id("123"))));
+        WebElement element = (new WebDriverWait(wd, Duration.ofSeconds(50))
+                .until(ExpectedConditions.presenceOfElementLocated(By.id("123"))));
 
     }
 }
