@@ -11,6 +11,11 @@ public class WebDriverConfig {
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
+        // без головы
+        //options.addArguments("--headless");
+        // разрешение 1 способ
+        //options.addArguments("--headless", "--window-size=1920,1200");
+
         return options;
     }
 }
